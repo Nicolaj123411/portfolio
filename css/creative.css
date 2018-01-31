@@ -176,18 +176,10 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 90vh !important;
   
 }
-header:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right,#54bfff,#3b008c);
-  opacity: .6; 
-  }
+
 
 
 header.masthead hr {
