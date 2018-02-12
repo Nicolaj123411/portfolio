@@ -7,6 +7,7 @@ html {
 body {
   /* font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; */
   font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
 }
 
 hr {
@@ -197,8 +198,12 @@ header.masthead p {
 }
 
 .big_card{
-  background: #ecf0f1;
+  background: #FFF;
+  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);
+  padding: 40px;
+  border-radius: 4px;
 }
+
 
 @media (min-width: 768px) {
   header.masthead p {
@@ -318,5 +323,5 @@ header.masthead p {
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5) !important;
 }
