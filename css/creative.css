@@ -39,11 +39,17 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+.center-block {
+  display: block;bg-primary
+  margin-right: auto;
+  margin-left: auto;
+}
  
 .bg-primary {
   background-color: #3498db !important;
-  
 }
+
+
 
 .bg-dark {
   background-color: #212529 !important;
@@ -99,6 +105,10 @@ img::-moz-selection {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.navbar-inverse{
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #3498db;
 }
@@ -128,6 +138,7 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
+
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -169,17 +180,40 @@ img::-moz-selection {
   }
 }
 
+.info_card{
+  width: 100%;
+
+  padding: 40px;
+  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);
+}
+  .small-spacer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.small-grid{
+  margin-top: 20px;
+}
+
+.small_box_container{
+  height: 175px;
+  width: 175px;
+  background-color: red;
+  margin: 10px;
+  float: left;
+}
+
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header_image_big.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 90vh !important;
-  
+  height: 100vh !important;
 }
 
 
@@ -187,6 +221,7 @@ header.masthead {
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 0px;
 }
 
 header.masthead h1 {
@@ -206,12 +241,14 @@ header.masthead p {
 
 
 @media (min-width: 768px) {
+
   header.masthead p {
     font-size: 1.15rem;
   }
 }
 
 @media (min-width: 992px) {
+
   header.masthead {
     height: 100vh;
     min-height: 650px;
@@ -224,6 +261,7 @@ header.masthead p {
 }
 
 @media (min-width: 1200px) {
+
   header.masthead h1 {
     font-size: 4rem;
   }
@@ -288,6 +326,7 @@ header.masthead p {
 }
 
 @media (min-width: 768px) {
+
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
@@ -304,7 +343,7 @@ header.masthead p {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 300px;
+  border-radius: 150px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -324,4 +363,16 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5) !important;
+}
+
+
+/* MOBILE */
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 500px) {
+
+
+  .big_card{
+    box-sizing: border-box;
+    margin: 0px 10px 0px 10px;
+  }
 }
