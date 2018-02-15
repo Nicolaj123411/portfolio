@@ -14,7 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Nicolaj Jensen</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Nicolaj Jensen</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,10 +41,21 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="about.html">Om mig</a>
+                        <a class="nav-link" href="index.html">Forside</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Om mig
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item js-scroll-trigger" href="#about-me">Om mig</a>
+                            <a class="dropdown-item js-scroll-trigger" href="#education">Uddannelse</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="projects.html">Projekter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -58,18 +69,18 @@
     </nav>
 
 
-    <header class="masthead text-center text-white d-flex">
+    <header class="masthead text-center text-white d-flex" style="background-image: url('../img/brainstorm.jpg');">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-8">
                     <h1 class="text-uppercase text-left">
-                        <strong>Hej mit navn er nicolaj</strong>
+                        <strong>Om mig</strong>
                     </h1>
                     <hr>
                 </div>
                 <div class="col-lg-8 text-left">
-                    <p class="text-faded mb-5 text-left">Din nye praktikant med fokus på webudvikling.</p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Se mine projekter</a>
+                    <p class="text-faded mb-5 text-left">En lille tekst om mig som leder ned til de andre punkter</p>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about-me">Lær mig at kende</a>
                 </div>
             </div>
         </div>
@@ -77,31 +88,187 @@
     </header>
     </div>
 
-    <section class="small-spacer">
+    <section class="small-spacer" id="about-me">
         <div class="container">
             <div class="info_card">
                 <h2>
-                    <strong>Om mig</strong>
+                    <strong>
+                        <span class="fa fa-user" class="fa fa-book" style="color: #3498db;"></span>&nbsp;Om mig</strong>
                 </h2>
                 <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque velit ut explicabo molestias eligendi amet.
                     Quaerat vitae architecto quis, eaque hic quisquam, ullam enim nemo est optio voluptas impedit ea fuga.
                     Laborum, nisi sed? Rerum nemo tempora autem dignissimos sapiente recusandae asperiores, a, cupiditate
                     consectetur aliquam ad nisi exercitationem sit.</p>
-                <div class="container">
+                <div class="container container-fluid">
                     <div class="row">
-                        <div class="col-lg-6 small-grid">
-                            <div class="small_box_container"></div>
-                            <div class="small_box_container"></div>
-                            <div class="small_box_container"></div>
-                            <div class="small_box_container"></div>
+                        <div class="col-lg-6 col-12 text-muted no-padding text-block">
+                            <h4>lille overskrift</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore earum quam delectus a dolorum iusto totam reprehenderit praesentium. Corporis.</p>
+                            <p>Cupiditate quasi, error eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nam. quibusdam perferendis quis doloribus distinctio sapiente magnam eaque ipsum quidem consectetur, asperiores, vel nulla expedita soluta.</p>
+                            <p>Minima odit rem sequi nam iste repellat numquam, pariatur dolorum enim quaerat! Esse temporibus eligendi labore cumque dolores tenetur voluptatem.</p>
                         </div>
-                        <div class="col-lg-6">jeg er sidst</div>
+                        <div class="col-lg-6">
+                            <img style="box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);" class="img-fluid" src="../img/tegner.jpg">
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="small-spacer" id="education">
+        <div class="container">
+            <div class="info_card">
+
+                <h2>
+                    <strong>
+                        <span class="fa fa-book" style="color: #3498db;"></span>&nbsp;Min uddannelse</strong>
+                </h2>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque velit ut explicabo molestias eligendi amet.
+                    Quaerat vitae architecto quis, eaque hic quisquam, ullam enim nemo est optio voluptas impedit ea fuga.
+                    Laborum, nisi sed? Rerum nemo tempora autem dignissimos sapiente recusandae asperiores, a, cupiditate
+                    consectetur aliquam ad nisi exercitationem sit.</p>
+                <div id="accordion">
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; EAL Odense -
+                                    <span class="text-muted">Multimediedesigner</span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                    <span>2016 - 2018 (Nuværende)</span>
+                                    <p>Hos Dane-Wood har jeg ansvar for webudvikling, fremstillelse af grafisk materiale samt søgeoptimering.
+                                    </p>
+                                    <p>Jeg blev ansat til at fremstille ny hjemmeside der var responsive og skalerbar. Dette er
+                                        opnået ved en wordpress løsning så de nemt selv kan stå for at ændre indholdet og vedligeholde
+                                        den på længere sigt hvilket var et af kerne ønskerne.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; SDE Odense -
+                                    <span class="text-muted">Webintegrator</span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                    <span>2016 - 2018 (Nuværende)</span>
+                                    <p>Hos Dane-Wood har jeg ansvar for webudvikling, fremstillelse af grafisk materiale samt søgeoptimering.
+                                    </p>
+                                    <p>Jeg blev ansat til at fremstille ny hjemmeside der var responsive og skalerbar. Dette er
+                                        opnået ved en wordpress løsning så de nemt selv kan stå for at ændre indholdet og vedligeholde
+                                        den på længere sigt hvilket var et af kerne ønskerne.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                            <div class="card-header" id="headingTree">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; SDE Vejle -
+                                    <span class="text-muted">Datatekniker </span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                <span>2016 - 2018 (Nuværende)</span>
+                                <p>Hos Dane-Wood har jeg ansvar for webudvikling, fremstillelse af grafisk materiale samt søgeoptimering.
+                                </p>
+                                <p>Jeg blev ansat til at fremstille ny hjemmeside der var responsive og skalerbar. Dette er
+                                    opnået ved en wordpress løsning så de nemt selv kan stå for at ændre indholdet og vedligeholde
+                                    den på længere sigt hvilket var et af kerne ønskerne.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
     </section>
 
+    <section class="small-spacer">
+        <div class="container">
+            <div class="info_card">
 
+                <h2>
+                    <strong>
+                        <span class="fas fa-file-alt" style="color: #3498db;"></span>&nbsp;Arbejdserfaring</strong>
+                </h2>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque velit ut explicabo molestias eligendi amet.
+                    Quaerat vitae architecto quis, eaque hic quisquam, ullam enim nemo est optio voluptas impedit ea fuga.
+                    Laborum, nisi sed? Rerum nemo tempora autem dignissimos sapiente recusandae asperiores, a, cupiditate
+                    consectetur aliquam ad nisi exercitationem sit.</p>
+                <div id="accordion">
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; EAL Odense -
+                                    <span class="text-muted">Multimediedesigner</span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, tempore?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; SDE Odense -
+                                    <span class="text-muted">Webintegrator</span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, tempore?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, tempore?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                            <div class="card-header" id="headingTree">
+                                <h5 class="mb-0 btn btn-link">
+                                    <span class="fa fa-book"></span>&nbsp; SDE Vejle -
+                                    <span class="text-muted">Datatekniker </span>
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
+                            <div class="card-body text-muted">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, tempore?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, tempore?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <section class="bg-primary" id="about">
         <div class="container">

@@ -39,6 +39,9 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
+
+
 .center-block {
   display: block;bg-primary
   margin-right: auto;
@@ -48,8 +51,6 @@ h6 {
 .bg-primary {
   background-color: #3498db !important;
 }
-
-
 
 .bg-dark {
   background-color: #212529 !important;
@@ -182,32 +183,76 @@ img::-moz-selection {
 
 .info_card{
   width: 100%;
-
   padding: 40px;
   box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);
 }
+  .info_card h2{
+    margin-bottom: 20px;
+  }
+  .info_card p{
+    margin-bottom: 50px;
+  }
   .small-spacer{
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-.small-grid{
-  margin-top: 20px;
-}
+  #accordion .card{
+    border:0px;
+    margin-bottom: 10px;
+  }
 
-.small_box_container{
-  height: 175px;
-  width: 175px;
-  background-color: red;
-  margin: 10px;
-  float: left;
-}
+  #accordion h5{
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 14px;
+  }
 
+  #accordion span{
+    color: #3498db;
+    font-weight: bold;
+  }
+  #accordion p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+#accordion button div{
+  padding: 0px;
+  padding: 10px 0px 10px 0px;
+}
+  #accordion button[aria-expanded="false"] div{
+    border-bottom: none;
+  }
+
+  #accordion button{
+    border: none;
+    background-color: #FFF;
+  }
+
+  #accordion button:focus {
+    outline: 0;
+  }
+
+  #accordion .card-header{
+    background-color: #FFF;
+    text-align: left;
+    padding-left:none !important;
+  }
+.text-block h4{
+  color: #000;
+}
+  .text-block p{
+    margin-bottom: 20px;
+  }
+.no-padding{
+  padding: 0px !important;
+}
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header_image_big.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -369,8 +414,6 @@ header.masthead p {
 /* MOBILE */
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 500px) {
-
-
   .big_card{
     box-sizing: border-box;
     margin: 0px 10px 0px 10px;
