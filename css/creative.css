@@ -184,7 +184,7 @@ img::-moz-selection {
 .info_card{
   width: 100%;
   padding: 40px;
-  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.20);
 }
   .info_card h2{
     margin-bottom: 20px;
@@ -240,9 +240,89 @@ img::-moz-selection {
     text-align: left;
     padding-left:none !important;
   }
+.text-box{
+  border-left: 3px solid  #3498db;
+  padding: 15px 15px 5px 15px;
+  margin-left: 20px;
+  background-color: rgba(0,0,0,0.030);
+  margin-bottom: 20px;
+}
+#showcase img{
+  width: 100%;
+  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.20);
+}
+#showcase hr{
+  margin-left:0px;
+  max-width: 100px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+#showcase p{
+  margin-bottom: 20px;
+}
+
+.project_showcase{
+  margin-top: 10px;
+  
+}
+  .project_showcase a{
+    width: 100%;
+    min-height: 70px;
+    color: #FFF;
+    padding: 0px;
+  }
+  .project_showcase a:hover{
+    border-left: 3px solid #3498db;
+    padding-left: 10px;
+  }
+    .project_showcase a:last-child{
+      border-bottom: none;
+    }
+  .project_showcase h2{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #3498db;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .project_showcase p{
+    text-align: left;
+    font-size: 14px !important;
+  }
+  .project_showcase hr{
+    max-width: 100% !important;
+    border-color: rgba(0,0,0,0.10) !important;
+    margin: 5px 0px 5px 0px !important;
+  }
+
+  .project_showcase .wrapper{
+    background-color:#FFF;;
+    height: auto;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-bottom: none;
+  }
+
 .text-block h4{
   color: #000;
 }
+
+.short-header{
+  height: 400px;
+  width: 100%;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+  .short-header h1{
+    color:#FFF;
+  }
+
+  .short-header hr{
+    margin-left: 0px;
+  }
+
   .text-block p{
     margin-bottom: 20px;
   }
@@ -279,7 +359,7 @@ header.masthead p {
 
 .big_card{
   background: #FFF;
-  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 25px -4px rgba(0,0,0,0.30);
   padding: 40px;
   border-radius: 4px;
 }
